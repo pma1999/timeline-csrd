@@ -14,13 +14,14 @@
             font-family: 'Roboto', sans-serif;
             background-color: #f5f5f5;
             color: #333;
+            font-size: 14px; /* Tamaño de fuente reducido */
             display: flex;
             justify-content: center;
             align-items: center;
         }
         .container {
             width: 90%;
-            max-width: 1200px;
+            max-width: 800px; /* Ancho reducido */
             padding: 20px;
             background-color: white;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -29,32 +30,35 @@
         h1 {
             color: #119297;
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 10px; /* Margen reducido */
+            font-size: 18px; /* Tamaño de fuente reducido */
         }
         .accordion-button {
             background-color: #119297;
             color: white;
             transition: background-color 0.3s ease;
+            font-size: 14px; /* Tamaño de fuente reducido */
         }
         .accordion-button:not(.collapsed) {
             background-color: #0e7a79;
         }
         .accordion-body {
             background-color: #e9ecef;
-            padding: 20px;
+            padding: 10px; /* Padding reducido */
+            font-size: 14px; /* Tamaño de fuente reducido */
         }
         ul {
             list-style-type: none;
             padding: 0;
         }
         li {
-            margin: 10px 0;
+            margin: 5px 0; /* Margen reducido */
         }
         .highlight {
             font-weight: 700;
         }
         .icon {
-            margin-right: 10px;
+            margin-right: 5px; /* Margen reducido */
         }
     </style>
 </head>
@@ -100,7 +104,7 @@
                 </h2>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#reportingAccordion">
                     <div class="accordion-body">
-                        <p>Requisitos: Si el grupo tiene filiales o sucursales grandes en la UE y si el grupo factura más de <span class="highlight">150 M €</span> al año en la UE durante los últimos <span class="highlight">dos años</span>.</p>
+                        <p>Requisitos: mismos 2 de 3 requisitos que grandes empresas o sucursales de grupos no UE, si el grupo factura más de <span class="highlight">150 M €</span> al año en la UE durante los últimos <span class="highlight">dos años</span>.</p>
                     </div>
                 </div>
             </div>
