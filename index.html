@@ -61,6 +61,22 @@
             margin-right: 5px; /* Margen reducido */
         }
     </style>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Dominio madre de tu SharePoint
+      var allowedReferrer = "https://nettrim.sharepoint.com/sites/KnowledgeBase";
+      
+      // Crear una nueva URL a partir del document.referrer
+      var referrerURL = new URL(document.referrer);
+      
+      // Comprobar si el hostname del referrer coincide con el hostname del dominio madre
+      if (referrerURL.hostname !== new URL(allowedReferrer).hostname) {
+        document.body.innerHTML = "<h1>Access Denied</h1><p>You do not have permission to view this content.</p>";
+        // Alternativamente, podrías redirigir a una página en blanco o una página de error
+        // window.location.href = "about:blank";
+      }
+    });
+    </script>
 </head>
 <body>
     <div class="container">
